@@ -1,0 +1,78 @@
+/* Page Wide CSS Variables */
+body{
+    --main-bg-color: #006199;
+    --main-color: #006199;
+}
+
+.bg-blue{
+    background-color: var(--main-bg-color) !important;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ .col {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.da-temp-color{
+    color: rgb(13, 184, 13);
+    padding: 2px;
+}
+
+.zn-temp-color{
+    color: rgb(86, 163, 250);
+    padding: 2px;
+}
+
+.zn-perf-color{
+    color: rgb(145, 23, 70);
+    padding: 2px;
+}
+
+.oat-color{
+    color: rgb(86, 163, 250);
+    padding: 2px;
+}
+
+.hhws-color{
+    color: rgb(13, 184, 13);
+    padding: 2px;
+}
+
+.card-link {
+    background: white;
+    color: var(--main-bg-color);
+}
+
+.card-link:hover{
+    background: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+    border-color: white;
+}
+
+.card-size{
+    min-width: 320px !important;
+    max-width: 320px !important;
+    border-width: 2px !important;
+    border-color: var(--main-bg-color) !important;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px !important;
+    border-color: var(--main-bg-color) !important;
+  }
+
+.veritcal-seperator{
+    border-left: 2px solid var(--main-bg-color) !important;
+}
