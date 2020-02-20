@@ -41,6 +41,7 @@ async function postData(url = '', data = {}) {
 
 function updateSubscription(subscriptionName){
 
+    let subName = subscriptionName;
     console.log(subscriptionName)
     
     let subscriptionPollRequest = {
@@ -59,7 +60,7 @@ function updateSubscription(subscriptionName){
     })
 
     //keep points subscribed
-    setTimeout(updateSubscription, 10000)
+    setTimeout(() => { updateSubscription(subName) }, 10000)
 }
 
 function updateColor(jqSelector, value){
@@ -110,8 +111,6 @@ function updateIncludes(subscriptions) {
             
             //if element exists, update it
             if ( $(`#${idName}`).length === 1){
-                
-                console.log("updating")
 
                 $(`#${idName}`).find('#unitName').text(unitName);
 
@@ -138,7 +137,7 @@ function updateIncludes(subscriptions) {
             }
             else{
                 $("#equipmentList").append(template({
-                    subscriptionName: subscription.name,
+                    subscriptionName: (subscription.name),
                     unitLink: unitOrd,
                     idName: idName,
                     unitName: unitName,

@@ -35,5 +35,5 @@ const template_DATwTUs =
                         '</div> \n' +
                     '</div> \n' +
                 '</a> \n' +
-                '<script>updateSubscription({{subscriptionName}})</script> \n' +
+                '<script>updateSubscription("{{subscriptionName}}")</script> \n' +
             '</div>'
