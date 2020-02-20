@@ -18,28 +18,21 @@ html, body {
     padding-left: 0px !important;
 }
 
-.da-temp-color{
-    color: rgb(13, 184, 13);
+.good-color{
+    background-color: rgb(21, 155, 21);
+    color: white;
     padding: 2px;
 }
 
-.zn-temp-color{
-    color: rgb(86, 163, 250);
+.cold-color{
+    background-color: rgb(86, 163, 250);
+    color: white;
     padding: 2px;
 }
 
-.zn-perf-color{
-    color: rgb(145, 23, 70);
-    padding: 2px;
-}
-
-.oat-color{
-    color: rgb(86, 163, 250);
-    padding: 2px;
-}
-
-.hhws-color{
-    color: rgb(13, 184, 13);
+.hot-color{
+    background-color: rgb(145, 23, 70);
+    color: white;
     padding: 2px;
 }
 

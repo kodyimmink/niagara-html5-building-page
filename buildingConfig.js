@@ -1,6 +1,12 @@
+//Unit type definitions
+const DATwTUs = 'DATwTUs';
+const DATwZNT = 'DATwZNT';
+const HHWS = 'HHWS';
+
 //define equipment list the building here
 
 const buildingLinks = {
+    "buildingName": "United Shore · Pontiac Central Complex",
     "siteLink" : "station:|slot:/Drivers/NiagaraNetwork/UnitedShore",
     "buildingLink" : "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC",
     "alarmsLink" : "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/Alarms",
@@ -14,32 +20,71 @@ const buildingLinks = {
     "bmsSupportLink": "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC",
 }
 
-const buildingEquipmentArray = [
+const buildingEquipment = [
     {
-        type: "HHWS",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/PontiacCentralLLC1480/CRS1_MainCtrl/CRS1_MainCtrl/points/HHWS"
+        type: HHWS,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/HHWS"
     },
     {
-        type: "DATwZNT",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/HV_10"
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/AC_1"
     },
     {
-        type: "DATwZNT",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/HV_11"
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ERV_1"
     },
     {
-        type: "RTUwZNs",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU_5",
-        vavsOrd: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU5_VAVs"
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/HV_1"
     },
     {
-        type: "RTUwZNs",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU_6",
-        vavsOrd: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU6_VAVs"
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_1"
     },
     {
-        type: "RTUwZNs",
-        ord: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU_7",
-        vavsOrd: "station:|slot:/Drivers/NiagaraNetwork/UnitedShore/UnitedShorePCC/PCC_1/points/RTU7_VAVs"
-    }
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_2"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_3"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_4"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_6"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/ECS_7"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/FCU_1"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/FCU_2"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/FCU_3"
+    },
+    {
+        type: DATwZNT,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/FCU_4"
+    },
+    {
+        type: DATwTUs,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/AC_2",
+        secondaryOrd: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/AC2_VAVs"
+    },
+    {
+        type: DATwTUs,
+        ord: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/AC_3",
+        secondaryOrd: "station:|slot:/Drivers/NiagaraNetwork/CityOfGrossePointeWoods/CityOfGPW/City_Of_GPW/points/AC3_VAVs"
+    },
 ]
